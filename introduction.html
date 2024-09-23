@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+
+<body>
+    <h3 id="hasil"></h3>
+    <script>
+        // variable
+        // string
+        var nama = "albert";
+        // number
+        var umur = 33;
+        var status = true;
+
+        var nilai1 = 10;
+        var nilai2 = 20.6;
+        // array
+        var buah = ["Apel", "Jeruk", "mangga", "Durian"];
+
+        // object
+        var identitas = {
+            nama: "albert",
+            umur: 33,
+            status: true
+        };
+        // function
+        function tambah(a, b) {
+            return (a + b);
+        }
+
+        function kurang(a, b) {
+            return (2 - 5);
+        }
+
+
+        // menampilkan variable
+        // console.log();
+
+        // kondisi
+        var nilai = 74;
+
+        function cek_nilai (nilai) {
+            if (nilai >=80) {
+                return "A";
+            } else if  (nilai >= 70) {
+                return "B";
+            }
+        }
+
+        // loop
+        for (var i = 0; i < buah.lenght; i++) {
+            console.log (buah [i]);
+        }
+
+        // DOM
+        document.getElementById("hasil").innerHTML = cek_nilai (84);
+    </script>
+</body>
+
+</html>
